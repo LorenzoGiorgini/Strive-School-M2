@@ -68,6 +68,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
          .card-img {
              width: 600px;
          }
+
+         .color-text-all {
+             color: #FF2D00;
+         }
+         .navbar {
+            background: #121212;
+         }
     </style>
   </head>
 
@@ -77,7 +84,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             This navigation bar must link every section in your page.
         -->
     <div class=".container-fluid">
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +120,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#recent"
+              <a class="nav-link"  href="#recent"
                 >Recent<span class="sr-only">(current)</span></a
               >
             </li>
@@ -263,23 +270,99 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
             Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
         -->
-        <div class="container">
-            <div class="row">
-              <div class="col-">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
+        <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src="./album covers/juice.jpg" >
             </div>
-          </div>
+            <div class="card">
+              <img class="card-img-top" src="./album covers/juice.jpg" >
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./album covers/juice.jpg" >
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./album covers/juice.jpg" >
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./album covers/juice.jpg" >
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./album covers/juice.jpg" >
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./album covers/juice.jpg" >
+            </div>
+        </div>
 
     <!-- EXERCISE 8
             Implement a footer with some information / social links.
         -->
+        <!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background: #121212bd;">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase color-text-all">Footer Content</h5>
+          <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat voluptates, esse corrupti explicabo perferendis porro aliquam recusandae autem ratione?</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase color-text-all">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="background: #121212; color: rgb(255, 255, 255);">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> Musify.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
     <!-- ############ EXTRA:
         EXERCISE 9
