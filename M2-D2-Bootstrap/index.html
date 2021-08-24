@@ -50,8 +50,8 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             ...to make sure you give every album the same consistent appearance.
          */
          .title {
-             margin-top: 150px;
-             margin-bottom: 25px;
+             margin-top: 55px;
+             margin-bottom: 20px;
          }
 
          .card {
@@ -59,9 +59,14 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             margin-bottom: 35px;
             border: none;
          }
+
          .title-review {
             margin-top: 70px;
             margin-bottom: 25px;
+         }
+
+         .card-img {
+             width: 600px;
          }
     </style>
   </head>
@@ -120,6 +125,9 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#hall-of-shame">Hall of Shame</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#best-artist">Top Artist</a>
               </li>
           </ul>
         </div>
@@ -204,9 +212,9 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - ... And whatever you think it's interesting about it!
         -->
 
-        <div class="container">
-            <h1 class="title-review" id="review">Album Review</h1>
-            <div class="card" style="width: 350px;">
+        <div class="container d-flex justify-content-end">
+            <div class="card" style="width: 400px;">
+                <h1 class="title-review" id="review">Album Review</h1>
                 <img src="./album covers/Pop_Smoke_-_Meet_the_Woo.png" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">Meet the WOO</h5>
@@ -224,9 +232,9 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
         -->
-        <div class="container">
-            <h1 class="title-review" id="hall-of-shame">Hall of Shame</h1>
-            <div class="card" style="width: 350px;">
+        <div class="container d-flex justify-content-start">
+            <div class="card" style="width: 400px;">
+                <h1 class="title-review" id="hall-of-shame">Hall of Shame</h1>
                 <img src="./album covers/Trippie_Redd_-_!.png" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">Esclamation Mark</h5>
@@ -240,12 +248,34 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
         -->
+        <div class="container d-flex justify-content-center" id="best-artist">
+            <div class="card bg-dark text-white">
+                <img src="./album covers/pop smoke.jpg" class="card-img" >
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Pop Smoke</h5>
+                  <p class="card-text">Bashar Barakah Jackson, known professionally as Pop Smoke, was an American rapper closely associated with Brooklyn drill. Born and raised in Canarsie, Brooklyn, he rose to fame with the release of his breakout singles "Welcome to the Party" and "Dior" in 2019</p>
+                </div>
+              </div>
+        </div>
 
     <!-- EXERCISE 7
             Just covers!
             Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
             Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
         -->
+        <div class="container">
+            <div class="row">
+              <div class="col-">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+          </div>
 
     <!-- EXERCISE 8
             Implement a footer with some information / social links.
