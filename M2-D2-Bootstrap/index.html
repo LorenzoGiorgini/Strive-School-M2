@@ -50,8 +50,18 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             ...to make sure you give every album the same consistent appearance.
          */
          .title {
-             margin-top: 50px;
+             margin-top: 150px;
              margin-bottom: 25px;
+         }
+
+         .card {
+            width: 230px;
+            margin-bottom: 35px;
+            border: none;
+         }
+         .title-review {
+            margin-top: 70px;
+            margin-bottom: 25px;
          }
     </style>
   </head>
@@ -98,16 +108,19 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home<span class="sr-only">(current)</span></a
+              <a class="nav-link" href="#recent"
+                >Recent<span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Albums</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#review">Reviews</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#hall-of-shame">Hall of Shame</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -119,12 +132,63 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
-    <h1 class="title">Recently Added</h1>
     <div class="container">
+      <h1 class="title" id="recent">Recently Added</h1>
       <div class="row">
-        <div class="col-sm">One of three columns</div>
-        <div class="col-sm">One of three columns</div>
-        <div class="col-sm">One of three columns</div>
+        <div class="col-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="./album covers/juice 2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Juice Wrld <br>All the girls are the same</p>
+            </div>
+          </div></div>
+        <div class="col-6 col-md-4 col-xl-3"><div class="card">
+            <img src="./album covers/juice.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Juice Wrld <br>Come & Go</p>
+            </div>
+          </div></div>
+        <div class="col-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="./album covers/trippie.png" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Trippie Red <br>Wish</p>
+            </div>
+          </div></div>
+          <div class="col-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="./album covers/Trippie_Redd_-_!.png" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Trippie Red <br>!</p>
+            </div>
+          </div></div>
+          <div class="col-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="./album covers/shoot for the stars.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Pop Smoke <br>Gangstas</p>
+            </div>
+          </div></div>
+          <div class="col-6 col-md-4 col-xl-3"><div class="card">
+            <img src="./album covers/Pop_Smoke_-_Meet_the_Woo.png" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Pop Smoke <br>Meet the WOO</p>
+            </div>
+          </div></div>
+          <div class="col-6 col-md-4 col-xl-3"><div class="card">
+            <img src="./album covers/pop-smoke-faith.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Pop Smoke <br>More Time</p>
+            </div>
+          </div></div>
+          <div class="col-6 col-md-4 col-xl-3"><div class="card">
+            <img src="./album covers/xxxten.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">XXXTentacion <br>Moonlight</p>
+            </div>
+          </div></div>
+          <div class="col-6 col-md-4 col-xl-3"><div class="card">
+            <img src="./album covers/kid cudi.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Kid Kudi <br>Pop smoke <BR>Show out feat. Pop Smoke</BR></p>
+            </div>
+          </div></div>
       </div>
     </div>
 
@@ -140,10 +204,36 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - ... And whatever you think it's interesting about it!
         -->
 
+        <div class="container">
+            <h1 class="title-review" id="review">Album Review</h1>
+            <div class="card" style="width: 350px;">
+                <img src="./album covers/Pop_Smoke_-_Meet_the_Woo.png" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Meet the WOO</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nulla quae consequatur.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Meet the WOO</li>
+                  <li class="list-group-item">Genre: Drill</li>
+                  <li class="list-group-item">Duration: 1h 50m</li>
+                </ul>
+              </div>
+        </div>
+
     <!-- EXERCISE 5
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
         -->
+        <div class="container">
+            <h1 class="title-review" id="hall-of-shame">Hall of Shame</h1>
+            <div class="card" style="width: 350px;">
+                <img src="./album covers/Trippie_Redd_-_!.png" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Esclamation Mark</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nulla quae consequatur.</p>
+                </div>
+              </div>
+        </div>
 
     <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
