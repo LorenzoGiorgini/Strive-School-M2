@@ -64,6 +64,9 @@
         Ex 16) Create a function to delete all "cards" from the page
       -->
     <style>
+      * {
+        margin: 0;
+      }
       .jumbo-style {
         display: block;
         margin: auto;
@@ -126,10 +129,6 @@
         margin: auto;
       }
 
-      body {
-        margin-top: 20px;
-      }
-
       .align-center {
         text-align: center;
       }
@@ -154,6 +153,7 @@
         float: left;
         border-right: 1px solid rgba(0, 0, 0, 0.2);
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 200px;
       }
       .pad-30,
       .pad-30-all > * {
@@ -169,6 +169,8 @@
       .wpx-100,
       .wpx-100-after:after {
         width: 100px;
+        height: 100px;
+        object-fit: cover;
       }
       .img-round,
       .img-rel-round {
@@ -198,6 +200,48 @@
       }
       .font-cond-b {
         font-weight: 700 !important;
+      }
+      @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
+      .container-fluid {
+        overflow: hidden;
+        margin-top: 250px;
+        background: #262626;
+        color: #627482 !important;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      small {
+        font-size: calc(
+          12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))
+        ) !important;
+      }
+
+      .bold-text {
+        color: #989c9e !important;
+      }
+
+      .mt-55 {
+        margin-top: calc(
+          50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))
+        ) !important;
+      }
+
+      h3 {
+        font-size: calc(
+          34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))
+        ) !important;
+      }
+
+      .social {
+        font-size: 21px !important;
+      }
+
+      .rights {
+        font-size: calc(
+          10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))
+        ) !important;
       }
     </style>
   </head>
@@ -229,13 +273,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#popular-dest">Popular Places</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#welcome-summ">Welcome Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#deal-day">Deal Of The Day</a>
               </li>
             </ul>
           </div>
@@ -244,8 +291,8 @@
     </div>
 
     <div class="container">
-      <h1 class="text-style-jumbo">Who We Are</h1>
-      <div class="jumbotron img-fluid jumbo-style">
+      <h1 class="text-style-jumbo" style="margin: 50px;" id="about">Who We Are</h1>
+      <div class="jumbotron img-fluid jumbo-style" style="color: white;">
         <h1 class="display-4">Traveler</h1>
         <p class="lead">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
@@ -321,7 +368,7 @@
     </div>
 
     <div class="container" style="box-shadow: 5px 5px 15px 5px #000000">
-      <h1 class="text-style" id="popular-dest">Welcome Summer</h1>
+      <h1 class="text-style" id="welcome-summ">Welcome Summer</h1>
       <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-2">
           <div class="card welcome-summer">
@@ -414,7 +461,7 @@
     </div>
 
     <div class="container d-none d-sm-block">
-      <h1 class="text-style">Deal of the day</h1>
+      <h1 class="text-style" id="deal-day">Deal of the day</h1>
       <div class="card" style="margin-bottom: 250px">
         <img
           class="card-img-top deal-day"
@@ -439,11 +486,9 @@
 
     <div class="container">
       <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
-        <h4 class="font-cond-l fg-accent lts-md mgb-10" contenteditable="false">
-          Not Yet Convinced?
-        </h4>
         <h1
           class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg"
+          style="margin-top: 200px"
           contenteditable="false"
         >
           Read Customer Reviews
@@ -452,7 +497,7 @@
       <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
         <li>
           <img
-            src="https://bootdey.com/img/Content/avatar/avatar1.png"
+            src="./review3.jpg"
             class="wpx-100 img-round mgb-20"
             title=""
             alt=""
@@ -466,7 +511,7 @@
             quae. "
           </p>
           <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">
-            Martha Stewart
+            John Walls
           </h5>
           <small
             class="font-cond case-u lts-sm fs-80 fg-text-l"
@@ -476,7 +521,7 @@
         </li>
         <li>
           <img
-            src="https://bootdey.com/img/Content/avatar/avatar4.png"
+            src="./review1.jpg"
             class="wpx-100 img-round mgb-20"
             title=""
             alt=""
@@ -500,7 +545,7 @@
         </li>
         <li>
           <img
-            src="https://bootdey.com/img/Content/avatar/avatar5.png"
+            src="./review2.jpeg"
             class="wpx-100 img-round mgb-20"
             title=""
             alt=""
@@ -523,6 +568,91 @@
           >
         </li>
       </ul>
+    </div>
+
+    <div class="container-fluid pb-0 mb-0 justify-content-center text-light">
+      <footer>
+        <div class="row my-5 justify-content-center py-5">
+          <div class="col-11">
+            <div class="row">
+              <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                <h3 class="text-muted mb-md-0 mb-5 bold-text">Traveler.</h3>
+              </div>
+              <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                <h6 class="mb-3 mb-lg-4 bold-text"><b>MENU</b></h6>
+                <ul class="list-unstyled">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Blog</li>
+                  <li>Portfolio</li>
+                </ul>
+              </div>
+              <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5">
+                  <b>ADDRESS</b>
+                </h6>
+                <p class="mb-1">605, RATAN ICON BUILDING</p>
+                <p>SEAWOODS SECTOR</p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="
+                  col-xl-8 col-md-4 col-sm-4 col-auto
+                  my-md-0
+                  mt-5
+                  order-sm-1 order-3
+                  align-self-end
+                "
+              >
+                <p class="social text-muted mb-0 pb-0 bold-text">
+                  <span class="mx-2"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></span>
+                  <span class="mx-2"
+                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                  ></span>
+                  <span class="mx-2"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></span>
+                  <span class="mx-2"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></span>
+                </p>
+                <small class="rights"
+                  ><span>&#174;</span> Traveler All Rights Reserved.</small
+                >
+              </div>
+              <div
+                class="
+                  col-xl-2 col-md-4 col-sm-4 col-auto
+                  order-1
+                  align-self-end
+                "
+              >
+                <h6 class="mt-55 mt-2 text-muted bold-text">
+                </h6>
+              </div>
+              <div
+                class="
+                  col-xl-2 col-md-4 col-sm-4 col-auto
+                  order-2
+                  align-self-end
+                  mt-3
+                "
+              >
+                <h6 class="text-muted bold-text"><b>Traveler</b></h6>
+                <small
+                  ><span
+                    ><i class="fa fa-envelope" aria-hidden="true"></i
+                  ></span>
+                  traveler.info@gmail.com</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script
