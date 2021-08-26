@@ -43,19 +43,24 @@ let assign = document.getElementsByClassName("submit-team")[0]
 assign.addEventListener("click" , () =>{
     let randomizedIndex = generateRandoms(listNames.length)
     let containerFather = document.getElementsByClassName("teams-col")[0]
+    let peopleInTeam = listNames.length / numberOfTeams
     if (listNames.length % numberOfTeams === 0) {
         for (let i = 0; i < numberOfTeams; i++) {
             let newRowAssigned = document.createElement("div")
-            newRowAssigned.className = "row d-flex flex-column"
-            let colAssigned = document.createElement("div")
-            colAssigned.classList.add("col-sm")
-            colAssigned.innerText = listNames[randomizedIndex[i]]
-            newRowAssigned.appendChild(colAssigned)
+            newRowAssigned.classList.add("list-of-team")
+            for (let j = 0; j < peopleInTeam; j++) {
+                let colAssigned = document.createElement("p")
+                colAssigned.innerText = listNames[randomizedIndex[j]]
+                newRowAssigned.appendChild(colAssigned)
+                if (j/2 === listNames.length / 2) {
+                    break
+                }
+            }
             containerFather.appendChild(newRowAssigned)
         }
     } else {
         for (let i = 0; i < numberOfTeams + 1; i++) {
-            
+               
         }
     }
 })
