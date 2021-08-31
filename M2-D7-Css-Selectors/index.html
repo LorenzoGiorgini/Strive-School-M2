@@ -522,6 +522,7 @@
 
     function changeJumbo() {
       let jumbo = document.getElementsByClassName("jumbotron p-4 p-md-5 text-white rounded bg-dark")[0]
+      jumbo.classList.remove("bg-dark")
       jumbo.classList.add("jumbo-color")
     }
     changeJumbo()
