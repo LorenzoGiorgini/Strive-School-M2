@@ -60,7 +60,7 @@ assign.addEventListener("click" , () =>{
         }
     } else {
         for (let i = 0; i < numberOfTeams + 1; i++) {
-               
+
         }
     }
 })
