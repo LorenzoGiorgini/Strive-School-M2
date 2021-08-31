@@ -180,8 +180,8 @@
       </div>
 
       <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">
+        <div class="col-md-8 px-0">
+          <h1 class="display-3 font-italic">
             Title of a longer featured blog post
           </h1>
           <p class="lead my-3">
@@ -515,25 +515,47 @@
     addNewLink()
 
     function changeColorMainTitle() {
-      let div = document.getElementsByClassName("col-md-8 blog-main")[0]
       let h3 = document.getElementsByClassName("pb-4 mb-4 font-italic border-bottom")[0]
       h3.style.color = "blue"
-      h3.appendChild(div)
     }
     changeColorMainTitle()
 
     function changeJumbo() {
       let jumbo = document.getElementsByClassName("jumbotron p-4 p-md-5 text-white rounded bg-dark")[0]
-      jumbo[0].classList.add("jumbo-color")
+      jumbo.classList.add("jumbo-color")
     }
     changeJumbo()
 
     function removeLinks() {
-      /* .blog-sidebar div:nth-child(3) > ol > li */
-      let removedNode = document.querySelectorAll(".blog-sidebar div:nth-child(3) > ol > li")
-      removedNode.remove()
+      let removedNode = document.querySelectorAll(".blog-sidebar div:nth-child(3) > ol")
+      for (let i = 0; i < removedNode.length; i++) {
+        removedNode[i].remove()
+      }
     }
     removeLinks()
+
+    function colSize() {
+      let col = document.getElementsByClassName("col-md-8 px-0")[0]
+      col.classList.remove("col-md-8")
+      col.classList.remove("px-0")
+      col.classList.add("col-md-12")
+      col.classList.add("px-0")
+    }
+    colSize()
+
+    function removeIcons() {
+      let iconToRemove = document.getElementsByTagName("svg")[0]
+      iconToRemove.remove()
+    }
+    removeIcons()
+
+    function trim50C() {
+      let trim = document.querySelectorAll(".container .row .blog-post:nth-child() > p:nth-child(2)")[0]
+      for (let i = 0; i < trim.length; i++) {
+        trim[i].slice(50)
+      }
+    }
+    trim50C()
     </script>
   </body>
 </html>
