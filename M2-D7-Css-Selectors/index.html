@@ -72,6 +72,10 @@
           background: darkcyan;
         }
 
+        .jumbo-color { 
+          background: rgb(79, 173, 150)!important;
+        }
+
 
     </style>
     <meta charset="utf-8" />
@@ -485,7 +489,7 @@
     <script>
       /*
         JS Exercises
-        EX11) Write a function to add a new link into the navbar
+        EX11) Write a function to add a new link into the navbar --
         EX12) Write a function to change the color of the main title
         EX13) Write a function to change the background of the jumbotron
         EX14) Write a function to remove all the links under "Elsewhere"
@@ -496,6 +500,40 @@
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
     */
+
+    function addNewLink() {
+      let div = document.getElementsByClassName("nav-scroller py-1 mb-2")[0]
+      let nav = document.getElementsByClassName("nav d-flex justify-content-between")[0]
+      let newLink = document.createElement("a")
+      newLink.classList.add("p-2")
+      newLink.classList.add("text-muted")
+      newLink.innerText = "NewLink"
+      newLink.href = "#"
+      div.appendChild(nav)
+      nav.appendChild(newLink)
+    }
+    addNewLink()
+
+    function changeColorMainTitle() {
+      let div = document.getElementsByClassName("col-md-8 blog-main")[0]
+      let h3 = document.getElementsByClassName("pb-4 mb-4 font-italic border-bottom")[0]
+      h3.style.color = "blue"
+      h3.appendChild(div)
+    }
+    changeColorMainTitle()
+
+    function changeJumbo() {
+      let jumbo = document.getElementsByClassName("jumbotron p-4 p-md-5 text-white rounded bg-dark")[0]
+      jumbo[0].classList.add("jumbo-color")
+    }
+    changeJumbo()
+
+    function removeLinks() {
+      /* .blog-sidebar div:nth-child(3) > ol > li */
+      let removedNode = document.querySelectorAll(".blog-sidebar div:nth-child(3) > ol > li")
+      removedNode.remove()
+    }
+    removeLinks()
     </script>
   </body>
 </html>
