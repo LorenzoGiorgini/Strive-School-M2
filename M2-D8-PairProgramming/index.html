@@ -66,6 +66,11 @@
         .yellow-strong-border {
             border-bottom-right-radius: 50px;
         }
+
+        span {
+            font-weight: lighter;
+            font-size: 35px;
+        }
     </style>
 </head>
 
@@ -87,18 +92,21 @@
         </div>
     </nav>
 
-    <div class="container text-center">
-        <h1 class="pt-3">Exercise 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa, consequuntur ipsa maxime obcaecati
+    <div class="container">
+        <h1 class="pt-3 text-center">Exercise 1</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa, consequuntur ipsa
+            maxime obcaecati
             reprehenderit!</p>
-        <div class="row">
+        <div class="row text-center">
             <div class="col-12 d-flex">
                 <div class="col-6 bg-success border-for-first-col" style="height: 400px;">
                     <p class="align-middle" hieght="100">consequuntur ipsa
                         maxime
                         obcaecati</p>
                 </div>
-                <div class="col-2 bg-info middle-border" style="height: 400px;"><p>some text</p></div>
+                <div class="col-2 bg-info middle-border" style="height: 400px;">
+                    <p>some text</p>
+                </div>
                 <div class="col-4 bottom-border" style="height: 400px;">
                     <div d-flex>
                         <div class="col-12 yellowish yellow-border align-middle" style="height: 132px;">
@@ -160,55 +168,61 @@
                     reprehenderit!</p>
             </div>
         </div>
-        <div class="container mt-4 d-flex">
+        <div class="container mt-4 d-flex text-center">
             <div class="row d-flex justify-content-around px-0 py-5">
                 <div class="col-4">
                     <div class="card bg-light px-0" style="width: 410px; height: 300px;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
-                          <h5 class="card-title">Light card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Light card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <a href="#" class="btn btn-primary" style="margin-bottom: 20px; width: 250px; height: 50px;">Go somewhere</a>
+                                <a href="#" class="btn btn-primary"
+                                    style="margin-bottom: 20px; width: 250px; height: 50px;">Go somewhere</a>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <!--  -->
                 <div class="col-4">
                     <div class="card bg-light px-0" style="width: 410px; height: 300px;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
-                          <h5 class="card-title">Light card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Light card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
                         </div>
                         <div class="row">
                             <div class="col-12 align-middle">
-                                <a href="#" class="btn btn-primary" style="margin-bottom: 20px; width: 250px; height: 50px;">Go somewhere</a>
+                                <a href="#" class="btn btn-primary"
+                                    style="margin-bottom: 20px; width: 250px; height: 50px;">Go somewhere</a>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <!--  -->
                 <div class="col-4">
                     <div class="card bg-light px-0" style="width: 410px; height: 300px;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
-                          <h5 class="card-title">Light card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Light card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <a href="#" class="btn btn-primary" style="margin-bottom: 20px; width: 250px; height: 50px;">Go somewhere</a>
+                                <a href="#" class="btn btn-primary"
+                                    style="margin-bottom: 20px; width: 250px; height: 50px;">Go somewhere</a>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
 
         <h1 class="pt-3 text-center pt-5">Exercise 3</h1>
         <div class="row">
@@ -427,6 +441,106 @@
             </div>
         </div>
         <h1 class="pt-3 text-center pt-5">Exercise 4</h1>
+
+        <div class="text-center text-muted py-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa, consequuntur ipsa maxime obcaecati
+                reprehenderit!</p>
+        </div>
+
+        <main role="main" class="container mb-5">
+            <div class="row">
+                <div class="col-md-8 blog-main">
+                    <h2 class="pb-2 mb-4 font-italic">Page Heading <span> Secodary Text</span></h2>
+
+                    <div class="blog-post">
+                        <div class="card mb-3">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="float-left d-flex py-2">
+                                    <h5 class="card-title ">Post title</h5>
+                                </div>
+                                <div class="pb-3">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content.
+                                        This content is a little bit longer.
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus recusandae
+                                        sed quis ea magnam, rerum expedita esse asperiores corrupti odit sint aspernatur
+                                        facilis ut beatae, ab exercitationem ipsa magni ipsam?</p>
+
+                                </div>
+                                <button class="btn btn-primary">Read More --></button>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.blog-post -->
+                    <div class="blog-post">
+                        <div class="card mb-3">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="float-left d-flex py-2">
+                                    <h5 class="card-title ">Post title</h5>
+                                </div>
+                                <div class="pb-3">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content.
+                                        This content is a little bit longer.
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus recusandae
+                                        sed quis ea magnam, rerum expedita esse asperiores corrupti odit sint aspernatur
+                                        facilis ut beatae, ab exercitationem ipsa magni ipsam?</p>
+
+                                </div>
+                                <button class="btn btn-primary">Read More --></button>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.blog-post -->
+                    <div class="blog-post">
+                        <div class="card mb-3">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="float-left d-flex py-2">
+                                    <h5 class="card-title ">Post title</h5>
+                                </div>
+                                <div class="pb-3">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content.
+                                        This content is a little bit longer.
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus recusandae
+                                        sed quis ea magnam, rerum expedita esse asperiores corrupti odit sint aspernatur
+                                        facilis ut beatae, ab exercitationem ipsa magni ipsam?</p>
+
+                                </div>
+                                <button class="btn btn-primary">Read More --></button>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.blog-post -->
+
+                    <nav class="blog-pagination text-center">
+                        <a class="btn btn-outline-primary">
+                            <-- Older</a>
+                                <a class="btn btn-outline-secondary" tabindex="-1" aria-disabled="true">Newer --></a>
+                    </nav>
+                </div>
+                <!-- /.blog-main -->
+
+                <aside class="col-md-4 blog-sidebar">
+
+                </aside>
+
+            </div>
+            <!-- /.row -->
+        </main>
+
 
     </div>
 
