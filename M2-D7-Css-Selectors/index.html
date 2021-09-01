@@ -38,8 +38,8 @@
           background: blueviolet;
         }
         /*Ex3*/
-        .jumbotron p > a{
-          color: blueviolet!important;
+        .jumbotron p > a {
+          color: rgb(132, 0, 255)!important;
         }
         /*Ex4*/
         .container .row .blog-main .blog-post:nth-of-type(1){
@@ -64,8 +64,8 @@
           background: blueviolet;
         }
         /*Ex9*/
-        footer p:nth-last-child(1) > a {
-          background: brown;
+        body p:last-of-type > a {
+          color: rgb(0, 255, 64);
         }
         /*Ex10*/
         footer {
@@ -551,9 +551,11 @@
     removeIcons()
 
     function trim50C() {
-      let trim = document.querySelectorAll(".container .row .blog-post:nth-child() > p:nth-child(2)")[0]
+      let trim = document.querySelectorAll(".container .row .blog-post > p:nth-of-type(2)")
       for (let i = 0; i < trim.length; i++) {
-        trim[i].slice(50)
+        let inner = trim[i].innerText
+        let slicedValue = inner.slice(50)
+        trim[i].innerText = slicedValue
       }
     }
     trim50C()
