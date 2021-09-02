@@ -76,7 +76,32 @@
            top: 0;
          }
 
-         /* ex4 */
+         /* ex5 */
+
+         .del {
+           background: black;
+           color: white;
+           opacity: 0;
+           transition: opacity 0.25s ease-in-out;
+         }
+
+         .effect-hover:hover .btn{
+          opacity: 1;
+         }
+
+         /* ex6 */
+         .button-elevate {
+          width: 100px;
+          height: 25px;
+          box-shadow:  0 0 15px rgba( 0 0 0 / 0.1); 
+          border: none;
+          transition: all .10s ease-in-out;
+         }
+
+         .button-elevate:hover {
+          box-shadow: 0 0 30px rgba( 0 0 0 / 0.5);
+          transform: scale(1.1);
+         }
 
     </style>
   </head>
@@ -244,23 +269,24 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="table-success">
+            <tr class="table-success effect-hover">
               <th scope="row">1</th>
               <td>More Time</td>
-              <td>2:20<button class="btn btn-primary">Delete</button></td>
+              <td>2:20<button class="btn btn-primary del">Delete</button></td>
             </tr>
-            <tr class="table-primary">
+            <tr class="table-primary effect-hover">
               <th scope="row">2</th>
               <td>Show Out ft. Pop Smoke</td>
-              <td>1:50<button class="btn btn-primary">Delete</button></td>
+              <td>1:50<button class="btn btn-primary del">Delete</button></td>
             </tr>
-            <tr class="table-danger">
+            <tr class="table-danger effect-hover">
               <th scope="row">3</th>
               <td>Moonlight</td>
-              <td>1:35<button class="btn btn-primary">Delete</button></td>
+              <td>1:35<button class="btn btn-primary del">Delete</button></td>
             </tr>
           </tbody>
         </table>
+        <button class="button-elevate">Add Track</button>
       </div>
     </section>
 
