@@ -52,6 +52,8 @@
           background: url("./album covers/Background/fpvmat-a-bXjqPckmLD8-unsplash.jpg") no-repeat center center/cover;
          }
 
+        /* ex1 */
+
          .fade-in-jumbo {
            opacity: 0;
            animation: fadein 2s forwards;
@@ -61,6 +63,20 @@
            from { opacity: 0; }
            to { opacity: 1; }
          }
+
+         /* ex3 */
+
+         .position-inner-image {
+           position: relative;
+         }
+         .inner-image {
+           width: 55px;
+           height: 20px;
+           position: absolute;
+           top: 0;
+         }
+
+         /* ex4 */
 
     </style>
   </head>
@@ -146,55 +162,67 @@
     <div class="container">
       <h1 class="title" id="recent">Recently Added</h1>
       <div class="row">
-        <div class="col-6 col-md-4 col-xl-3"><div class="card" >
+        <div class="col-6 col-md-4 col-xl-3">
+          <div class="card position-inner-image">
+            <img src="./album covers/Rap-Badge.png" class="inner-image">
             <img src="./album covers/juice 2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Juice Wrld <br>All the girls are the same</p>
             </div>
-          </div></div>
-        <div class="col-6 col-md-4 col-xl-3"><div class="card">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-xl-3">
+          <div class="card">
+            <img src="./album covers/Rap-Badge.png" class="inner-image">
             <img src="./album covers/juice.jpg" class="card-img-top">
             <div class="card-body">
               <p class="card-text">Juice Wrld <br>Come & Go</p>
             </div>
           </div></div>
         <div class="col-6 col-md-4 col-xl-3"><div class="card" >
+          <img src="./album covers/Rap-Badge.png" class="inner-image">
             <img src="./album covers/trippie.png" class="card-img-top">
             <div class="card-body">
               <p class="card-text">Trippie Red <br>Wish</p>
             </div>
           </div></div>
           <div class="col-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="./album covers/Rap-Badge.png" class="inner-image">
             <img src="./album covers/Trippie_Redd_-_!.png" class="card-img-top">
             <div class="card-body">
               <p class="card-text">Trippie Red <br>!</p>
             </div>
           </div></div>
           <div class="col-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="./album covers/Rap-Badge.png" class="inner-image">
             <img src="./album covers/shoot for the stars.jpg" class="card-img-top">
             <div class="card-body">
               <p class="card-text">Pop Smoke <br>Gangstas</p>
             </div>
           </div></div>
           <div class="col-6 col-md-4 col-xl-3"><div class="card">
+            <img src="./album covers/Rap-Badge.png" class="inner-image">
             <img src="./album covers/Pop_Smoke_-_Meet_the_Woo.png" class="card-img-top">
             <div class="card-body">
               <p class="card-text">Pop Smoke <br>Meet the WOO</p>
             </div>
           </div></div>
           <div class="col-6 col-md-4 col-xl-3"><div class="card">
+            <img src="./album covers/Rap-Badge.png" class="inner-image">
             <img src="./album covers/pop-smoke-faith.jpg" class="card-img-top">
             <div class="card-body">
               <p class="card-text">Pop Smoke <br>More Time</p>
             </div>
           </div></div>
           <div class="col-6 col-md-4 col-xl-3"><div class="card">
+            <img src="./album covers/Rap-Badge.png" class="inner-image">
             <img src="./album covers/xxxten.jpg" class="card-img-top">
             <div class="card-body">
               <p class="card-text">XXXTentacion <br>Moonlight</p>
             </div>
           </div></div>
           <div class="col-6 col-md-4 col-xl-3"><div class="card">
+            <img src="./album covers/Rap-Badge.png" class="inner-image">
             <img src="./album covers/kid cudi.jpg" class="card-img-top">
             <div class="card-body">
               <p class="card-text">Kid Kudi <br>Pop smoke <BR>Show out feat. Pop Smoke</BR></p>
@@ -202,6 +230,39 @@
           </div></div>
       </div>
     </div>
+
+<!-- EXERCISE 4   -->
+    <section>
+      <div class="container">
+        <h1>Tracklist</h1>
+        <table class="table">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">#</th>
+              <th scope="col">Title</th>
+              <th scope="col">Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-success">
+              <th scope="row">1</th>
+              <td>More Time</td>
+              <td>2:20<button class="btn btn-primary">Delete</button></td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">2</th>
+              <td>Show Out ft. Pop Smoke</td>
+              <td>1:50<button class="btn btn-primary">Delete</button></td>
+            </tr>
+            <tr class="table-danger">
+              <th scope="row">3</th>
+              <td>Moonlight</td>
+              <td>1:35<button class="btn btn-primary">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
     <!-- EXERCISE 4
             Create a section for the album reviews.
@@ -337,20 +398,6 @@
   
   </footer>
 
-    <!-- ############ EXTRA:
-        EXERCISE 9
-            Create an album details area which will be toggled on and off by clicking on the album image.
-        -->
-
-    <!-- EXERCISE 10
-            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible).
-            (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
-        -->
-
-    <!--
-         EXERCISE 11
-            Add in the footer a field that counts, on page load, how many ALBUMS are present on the page.
-        -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -361,5 +408,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
