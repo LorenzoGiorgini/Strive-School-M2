@@ -132,3 +132,46 @@ body {
     color: #484848;
     font-size: 14px;
 }
+
+.img-styling {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.img-card-style {
+    height: 400px;
+}
+
+.img-section-long {
+    width: 140px;
+    height: 100px;
+}
+
+.text-bigcard {
+    position: absolute;
+    top: 20px;
+    left: -70px;
+}
+
+.img-bigcard {
+    position: absolute;
+    top: 50px;
+    left: -70px;
+}
+
+.button-more {
+    height: 50px;
+    width: 200px;
+}
+
+.atag-footer {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+.icons-footer {
+    
+}
