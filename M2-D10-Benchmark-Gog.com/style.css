@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #d8d8d8;
+}
+
+.specifier {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.specifier-box {
+    margin-top: 20px;
+}
+
+.bg-gog {
+    background: #2c2c2c;
+}
+
+.carousel-indicators {
+    position: unset;
+}
+
+.card {
+    width: 255px;
+    height: 230px;
+}
+
+.img-card-gog {
+    width: 252px;
+    height: 120px;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.col-modified {
+    margin: -17px;
+}
+
+.btn-color {
+    background: #78387b;
+    color: white;
+    font-weight: 700;
+}
+
+.pricing-tag {
+    font-weight: 700;
+    color: black;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    padding: 0;
+}
+
+.span-color-text {
+    color: #78387b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.border-of-galaxy {
+    padding-left: 44px;
+    margin-left: 55px;
+    border-left: 1px solid #78387b;
+}
