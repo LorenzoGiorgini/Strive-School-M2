@@ -13,6 +13,22 @@ body {
     margin-top: 4px;
 }
 
+.icon-colored {
+    color: white;
+    margin-left: 40px;
+}
+
+.img-user {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.counter-styled {
+    font-weight: 500;
+    font-size: 13px;
+}
+
 .specifier-box {
     margin-top: 20px;
 }
@@ -52,6 +68,8 @@ body {
 .pricing-tag {
     font-weight: 700;
     color: black;
+    margin-top: 23px;
+    margin-left: 5px;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
@@ -68,4 +86,49 @@ body {
     padding-left: 44px;
     margin-left: 55px;
     border-left: 1px solid #78387b;
+}
+
+.image-visa {
+    width: 100%;
+    height: 200px;
+}
+
+.img-fluid {
+    height: initial;
+}
+
+.img-sizing-visa {
+    width: 100%;
+    height: 200px;
+}
+
+.image-over-image {
+    position: absolute;
+    top: 100px;
+    left: 630px;
+}
+
+.text-over-image1 {
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    top: 75px;
+    left: 25px;
+}
+.text-over-image2 {
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    top: 130px;
+    left: 27px;
+}
+
+.visa-resize {
+    width: 100px;
+    height: 50px;
+}
+
+.label {
+    color: #484848;
+    font-size: 14px;
 }
